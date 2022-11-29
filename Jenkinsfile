@@ -8,7 +8,7 @@ pipeline {
       }
       stage('Clone'){
             steps{
-                git 'https://github.com/ToanNguyenn/jenkins_tutorial'
+                git branch: 'main', url: 'https://github.com/ToanNguyenn/jenkins_tutorial'
             }
       }
       stage('Notification') {
